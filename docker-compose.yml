@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python-container:
+    build:
+      context: .
+    volumes:
+      - ./scripts:/app/scripts
+    command: /bin/bash
+    stdin_open: true
+    tty: true
